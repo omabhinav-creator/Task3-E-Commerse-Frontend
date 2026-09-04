@@ -73,7 +73,7 @@ body { background: var(--bg-gradient); background-color: var(--bg-color); color:
 
 .card-img-container { 
     width: 100%; 
-    height: 170px; /* Restored height */
+    height: 70%; /* Restored height */
     border-radius: 14px; /* Restored curved inner edges */
     overflow: hidden; 
     position: relative;

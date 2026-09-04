@@ -1,7 +1,7 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 let currentCategory = "All Products";
-let maxPriceFilter = 5000;
+let maxPriceFilter = 50000;
 
 function saveState() {
     localStorage.setItem('cart', JSON.stringify(cart));
