@@ -9,12 +9,12 @@ const productsData = [
     { id: 7, category: "Food", subCategory: "Junk", title: "Cheese Burger", price: 90, thumbnail: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", shortDesc: "Classic beef burger." },
 
     // --- ELECTRONICS ---
-    { id: 8, category: "Electronics", subCategory: "Wearables", title: "Smart Watch Pro", price: 2999, thumbnail: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500", shortDesc: "Fitness tracker." },
+    { id: 8, category: "Electronics", subCategory: "Wearables", title: "Smart Watch Pro", price: 2999, thumbnail: "https://gourban.in/cdn/shop/files/Pulse.jpg?v=1749553994&width=2048", shortDesc: "Fitness tracker." },
     { id: 9, category: "Electronics", subCategory: "Large Electronics", title: "Smart TV 55 inch", price: 45000, thumbnail: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500", shortDesc: "4K Ultra HD Display." },
 
     // --- BOOKS ---
     { id: 10, category: "Books", subCategory: "School Books", title: "CBSE Math Class 10", price: 350, thumbnail: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500", shortDesc: "NCERT Textbook." },
-    { id: 11, category: "Books", subCategory: "Inter Books", title: "IPE Physics Vol 1", price: 450, thumbnail: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500", shortDesc: "First year physics." },
+    { id: 11, category: "Books", subCategory: "Inter Books", title: "IPE MPC Books Set ", price: 450, thumbnail: "https://www.manabadi.co.in/boards/wp-content/uploads/2025/11/AP-Inter-Text-books.jpg", shortDesc: "First year Intermediate Books Set." },
     { id: 12, category: "Books", subCategory: "Competitive Exams", title: "JEE Advanced prep", price: 850, thumbnail: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500", shortDesc: "Complete mock tests." },
     { id: 13, category: "Books", subCategory: "Epic Books", title: "Mahabharatha", price: 600, thumbnail: "https://images.unsplash.com/photo-1589998059171-9899ea6258d9?w=500", shortDesc: "The complete epic." },
 
