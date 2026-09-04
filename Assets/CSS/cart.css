@@ -1,0 +1,12 @@
+.cart-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.cart-container h2 { margin-bottom: 20px; }
+.cart-box { background: #111; border-radius: 16px; padding: 20px; border: 1px solid #222; }
+.cart-item { display: flex; align-items: center; gap: 15px; padding: 15px 0; border-bottom: 1px solid #222; }
+.cart-item:last-child { border-bottom: none; }
+.cart-info { flex: 1; }
+.cart-info h4 { margin-bottom: 5px; }
+.cart-info span { color: #ff8c00; font-weight: 700; }
+.cart-controls { display: flex; align-items: center; gap: 10px; background: #222; padding: 5px 10px; border-radius: 8px; }
+.cart-controls button { background: none; border: none; color: white; font-size: 1.2rem; cursor: pointer; padding: 0 5px; }
+.cart-summary { background: #111; margin-top: 20px; padding: 25px; border-radius: 16px; text-align: right; border: 1px solid #222; }
+.cart-summary h3 { font-size: 1.5rem; }

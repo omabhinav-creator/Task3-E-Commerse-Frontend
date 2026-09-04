@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | E-Commerce</title>
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/CSS/products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h2>Om Abhinav's <span>E-Commerce</span></h2></div>
+        <nav class="nav" id="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html" class="active">Wishlist</a>
+            <a href="cart.html">Cart <span id="nav-cart-badge" class="badge">0</span></a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div class="page-container">
+        <h2 style="margin-bottom: 25px; color: #ff4757;">My Wishlist ♥</h2>
+        <div class="grid-layout" id="wishlist-grid">
+            <!-- JS injects wishlist cards here -->
+        </div>
+    </div>
+
+   <script src="../Assets/JS/products.js"></script>
+    <script src="../Assets/JS/app.js"></script>
+</body>
+</html>

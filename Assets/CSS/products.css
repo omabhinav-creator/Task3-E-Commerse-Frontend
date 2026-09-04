@@ -1,0 +1,10 @@
+.page-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.filters { display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+.filters input, .filters select {
+    padding: 12px 20px; border-radius: 8px; border: 1px solid #333;
+    background: #111; color: white; outline: none; font-size: 1rem;
+}
+.filters input { flex: 1; min-width: 250px; }
+.filters select { width: 200px; }
+
+.grid-layout { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }

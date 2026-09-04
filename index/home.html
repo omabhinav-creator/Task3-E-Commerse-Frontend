@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-Commerce</title>
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/CSS/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h2>Om Abhinav's <span>E-Commerce</span></h2></div>
+        <nav class="nav" id="nav-menu">
+            <a href="home.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart <span id="nav-cart-badge" class="badge">0</span></a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Building the Future of <br><span>Digital Commerce</span></h1>
+            <p>Explore our premium selection of electronics, clothing, and fresh foods.</p>
+            <a href="products.html" class="hero-btn">Explore Products</a>
+        </section>
+
+        <section class="scroller-section">
+            <div class="section-header">
+                <h2>🔥 Special Offers</h2>
+                <a href="products.html">View All ➔</a>
+            </div>
+            <!-- Amazon-style Horizontal Scroller -->
+            <div class="horizontal-scroller" id="special-offers-scroller">
+                <!-- Javascript will inject cards here -->
+            </div>
+        </section>
+    </main>
+
+   <script src="../Assets/JS/products.js"></script>
+    <script src="../Assets/JS/app.js"></script>
+</body>
+</html>

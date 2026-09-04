@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Om Abhinav's Store</title>
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h2>Om Abhinav's E-Commerce Store</h2></div>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart <span id="nav-cart-badge" class="badge">0</span></a>
+            <a href="contact.html">Contact</a>
+            
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div class="page-container">
+        <!-- ACCORDION SIDEBAR -->
+        <aside class="sidebar">
+            <h3>Browse by</h3>
+            <ul class="sidebar-menu">
+                <li onclick="filterProducts('All Products')" class="active" style="padding: 10px; font-weight: bold; color: var(--accent);">All Products</li>
+                
+                <li class="category-group">
+                    <div class="category-header" onclick="toggleCategory(this, 'Food')">Food <span class="toggle-icon">+</span></div>
+                    <ul class="sub-categories" style="display: none;">
+                        <li onclick="filterProducts('Breakfast')">Breakfast</li>
+                        <li onclick="filterProducts('Meals')">Meals</li>
+                        <li onclick="filterProducts('Snack')">Snack</li>
+                        <li onclick="filterProducts('Veg')">Veg</li>
+                        <li onclick="filterProducts('Non-veg')">Non-veg</li>
+                        <li onclick="filterProducts('Junk')">Junk</li>
+                    </ul>
+                </li>
+
+                <li class="category-group">
+                    <div class="category-header" onclick="toggleCategory(this, 'Electronics')">Electronics <span class="toggle-icon">+</span></div>
+                    <ul class="sub-categories" style="display: none;">
+                        <li onclick="filterProducts('Wearables')">Wearables</li>
+                        <li onclick="filterProducts('Large Electronics')">Large Electronics</li>
+                    </ul>
+                </li>
+
+                <li class="category-group">
+                    <div class="category-header" onclick="toggleCategory(this, 'Books')">Books <span class="toggle-icon">+</span></div>
+                    <ul class="sub-categories" style="display: none;">
+                        <li onclick="filterProducts('School Books')">School Books</li>
+                        <li onclick="filterProducts('Inter Books')">Inter Books</li>
+                        <li onclick="filterProducts('Epic Books')">Epic Books</li>
+                        <li onclick="filterProducts('Competitive Exams')">Competitive Exams</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div style="margin-top: 30px;">
+                <h3>Price Range</h3>
+                <input type="range" style="width: 100%; margin: 10px 0;" min="0" max="5000" value="5000" oninput="updatePriceFilter(this.value)">
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span>₹0</span>
+                    <span id="price-display">₹5000</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Display Area -->
+        <main class="main-content">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search across all categories..." onkeyup="filterProducts()">
+            <div class="grid-layout" id="products-grid">
+                <!-- JS injects cards here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="../Assets/JS/products.js"></script>
+    <script src="../Assets/JS/app.js"></script>
+</body>
+</html>
